@@ -13,7 +13,7 @@ export function apiKeyValidator(req: Request, res: Response, next: NextFunction)
 	if (headerApiKey !== apiKey) {
 		return res.status(403).json({ error: "Your API key is invalid" });
 	}
-	next();
+	next(); 
 }
 
 export function apiKeyValidatorParam(req: Request, res: Response, next: NextFunction) {
